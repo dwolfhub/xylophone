@@ -1,0 +1,14 @@
+.DS_Store
+app/cache/*
+!app/cache/.gitkeep
+app/logs/*.log
+
+config/local.yml
+config/_db.php
+
+node_modules/
+vendor/
+.vagrant
+
+public_html/dist/
+pimple.json

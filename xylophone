@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+set_time_limit(0);
+
+use Xylophone\Provider\MigrationServiceProvider;
+use Xylophone\Command\NamespaceCommand;
+use Silex\Application;
+
+/** @var Application $app */
+$app = require_once __DIR__ . '/app/bootstrap.php';
+
+$app->register(new MigrationServiceProvider());
+
+
+$app['console']->run();

@@ -1,0 +1,18 @@
+# Configuration for Xylophone
+# Copy this file and call it local.yml to override the default configuration
+
+name: xylophone
+version: 0.0.1
+debug: true
+
+# Database Configuration
+database:
+    driver: pdo_mysql
+    host: 127.0.0.1
+    user: xylophone
+    password: xylophone
+    dbname: xylophone
+    charset: utf8
+
+log:
+    level: INFO

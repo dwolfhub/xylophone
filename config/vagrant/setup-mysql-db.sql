@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS xylophone;
+
+CREATE USER IF NOT EXISTS 'xylophone'@'localhost' IDENTIFIED BY 'xylophone';
+
+GRANT USAGE ON *.* TO 'xylophone'@'localhost' IDENTIFIED BY 'xylophone'
+WITH MAX_QUERIES_PER_HOUR 0
+MAX_UPDATES_PER_HOUR 0
+MAX_CONNECTIONS_PER_HOUR 0
+MAX_USER_CONNECTIONS 0;
+
+GRANT ALL ON `xylophone`.* TO `xylophone`@`localhost`;
